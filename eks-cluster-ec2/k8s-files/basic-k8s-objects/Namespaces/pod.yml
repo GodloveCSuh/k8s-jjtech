@@ -1,16 +1,17 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "my-app"
+  name: "tower-pod2"
   namespace: jjtech-project
   labels:
-    app: "my-app"
+    app: "tower"
 spec:
   containers:
   - name: tower-container
     image: "nginx"
     resources:
       limits:
+<<<<<<< HEAD
           cpu: 200m
           memory: 500Mi
           requests: cd
@@ -19,4 +20,11 @@ spec:
     ports:
     - containerPort:  80
       name:  http
+=======
+        cpu: 200m
+        memory: 500Mi
+      requests:
+        cpu: 100m
+        memory: 200Mi
+>>>>>>> 3ad2bb1cc5c3505c145044df75322515bd62338f
     
