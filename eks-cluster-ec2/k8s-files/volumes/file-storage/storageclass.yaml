@@ -8,5 +8,5 @@ allowVolumeExpansion: true
 
 parameters:
   provisioningMode: efs-ap
-  fileSystemId: fs-07a5f8cfb7439ab5c
+  fileSystemId: fs-01ce24f282db7fcdd
     

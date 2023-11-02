@@ -18,9 +18,10 @@ spec:
           ports:
             - containerPort: 8080
           volumeMounts:
-            - name: data-volume
+            - name: data-volume #this must correspond to the name of the volume
               mountPath: /opt # Mount path inside the container
       volumes:
         - name: data-volume
           persistentVolumeClaim:
             claimName: efs-pvc  # Name of your PersistentVolumeClaim
+#NB: EFS listens on port 2049 which must be allowed on your security group
