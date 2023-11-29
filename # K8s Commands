@@ -55,7 +55,7 @@ kubectl api-resources --namespaced=false # list resources that are not namespace
 
 kubectl api-resources --namespaced=true # list resources that are namespace bound
 
-kubectl create -f <file name> --namespace <namsepace name> #  Create a deployment object in a namepsace. Only use this if the namespace was not mentioned in the ocnfiguration/manifest file
+kubectl create -f <file name> --namespace <namsepace name> #  Create a deployment object in a namepsace. Only use this if the namespace was not mentioned in the configuration/manifest file
 
 Kubectl get --all --namespace <name of namespace> # To get all resources in a given namespace
 
@@ -82,7 +82,7 @@ kubectl create -f <file name> # Create replicat from file
 
 kubectl get deployment # Get info about deployment
 
-kubectl get deployment <name of deployment> # To delete deployment
+kubectl delete deployment <name of deployment> # To delete deployment
 
 kubectl apply -f <file name> # To update deployment manifest file in case you changed number of replicas
 
